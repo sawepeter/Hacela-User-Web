@@ -1,0 +1,678 @@
+*{
+    box-sizing: border-box;
+    outline: none;
+}
+
+.login-cover{
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 800;
+    align-items: center;
+}
+#loginProgress{
+    display: none;
+}
+.img-circle {
+    border-radius: 50%;
+}
+.chips{
+    padding-top: 10px;
+    display: block;
+  }
+.deletechip{
+    position: relative;
+    float: right;
+    size: 50px;
+    padding-top: 10px;
+    padding-right: 30px;
+}
+
+.searchchip{
+    position: relative;
+    float: right;
+    padding-top: 10px;
+    padding-right: 10px;
+
+}
+.addchpm{
+    position: relative;
+    size: 50px;
+    padding-top: 10px;
+    padding-left: 30px;
+}
+.group1{
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+.messagepostsection{
+    width: fit-content;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+}
+
+.messagepost{
+    padding-top: 10px;
+}
+.dropdown-btn:hover {
+    color: #f1f1f1;
+  }
+  
+.postBtnd{
+    padding-top: 10px;
+}
+
+#loginError{
+    display: none;
+}
+
+.headimg{
+    height: 60px;
+    width: 75px;
+    padding-right: 10px;
+}
+
+.imagesect{
+    padding-left: 35px;
+    padding-top: 30px;
+}
+.addinvest{
+    padding-left: 35px;
+    padding-top: 30px;
+}
+
+.addcomm{
+    padding-left: 35px;
+    padding-top: 30px;
+}
+
+
+.ccloan{
+    padding-left: 50px;
+}
+.pploan{
+    padding-left: 50px;
+}
+
+.row {
+    padding-top: 60px;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+  }
+
+
+  .card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: max-content;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-right: 5px;
+    position: relative;
+    top:30px;
+    left: 28px;
+}
+
+.addmembercard {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width:max-content;
+    position: relative;
+    top:30px;
+    left: 28px;
+    display:none;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.container {
+    padding: 2px 16px;
+}
+
+  .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    display: block;
+    border: none;
+    background: none;
+    width:100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
+  .fa-caret-down {
+    float: right;
+    padding-right: 8px;
+  }
+  .dropdown-container {
+    display: none;
+    padding-left: 8px;
+  }
+  /*HACELA TEAM PAGE*/
+
+
+   /*END OF HACELA TEAM PAGE*/
+
+.primg {
+        border-radius: 50%;
+        left: 120px;
+        float: left;    
+        top: 100px;
+        position: absolute;
+      }
+
+.bg-header{
+      position: relative;
+      width: 100%;
+      height: 150px;
+}
+.userdetails{
+    left: 140px;
+    top:280px;
+    float: left;    
+    position: absolute;
+    padding-top: 10px;
+}
+
+.card-row{
+    position: absolute;
+    top: 420px;
+    left:80px;
+    display: flex;
+    flex-direction: row;
+}
+.briefdescription{
+    top: 550px;
+    position: absolute;
+    left: 100px;
+    height: 300px;
+    width: 300px;
+}
+.cardcoll{
+
+}
+.fa {
+    padding: 7px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+.fa-linkedin {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-envelope {
+    background: #55ACEE;
+    color: white;
+}
+.icon-row{
+    position: absolute;
+    top: 680px;
+    left:90px;
+    display: flex;
+    flex-direction: row;
+}
+.profiledet{
+    height: auto;
+    width: 100%;
+}
+.left-section{
+    height: auto;
+    width: 40%;
+}
+.right-section{
+    height: auto;
+    width: 60%;
+    float: right;
+    top:70px;
+    position: relative;
+}
+.coll-row{
+    margin: 5px -5px;
+}
+
+.coll-row,
+.coll-row > .column {
+    padding: 8px;
+}
+.column {
+    float: left;
+    width: 33.33%;
+    display: none; /* Hide columns by default */
+}
+.coll-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.content {
+    background-color: white;
+    padding: 10px;
+}
+.show {
+    display: block;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: white;
+    cursor: pointer;
+  }
+  .btn:hover {
+  background-color: #ddd;
+}
+.leftcontact{
+    float: left;
+    height: auto;
+    width:50%;
+    padding-left: 100px;
+    padding-top: 50px;
+}
+.emailform{
+    float: right;
+    width:50%;
+    padding-right: 100px;
+    padding-top: 50px;
+}
+
+
+
+/**Meet the team**/
+.teamsection{
+width: 100%;
+height: 500px;
+}
+
+.team-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.team-column {
+    float: left;
+    width: 18.5%;
+    margin-bottom: 16px;
+    padding-top:50px;
+    padding-left: 50px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+    .team-column {
+        width: 100%;
+        display: block;
+    }
+}
+
+/* Add some shadows to create a card effect */
+.team-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.team-container {
+    padding: 0 16px;
+}
+
+/* Clear floats */
+.team-container::after, .team-row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title {
+    color: grey;
+}
+
+.introsection{
+    height: 500px;
+    width: 100%;
+}
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    margin-right: 50px;
+    margin-left: 50px;
+ 
+  }
+ /* Hide the images by default */
+  .mySlides {
+      display: none;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+
+
+.price-columns {
+    float: left;
+    width: 30%;
+    padding: 8px;
+    margin-left: 10px;
+    margin-top: 50px;
+}
+
+.price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+.price-row{
+    display: flex;
+    justify-content: center;
+}
+
+.price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+
+.price .header-price {
+    background-color: #111;
+    color: white;
+    font-size: 25px;
+}
+
+
+.price li {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.price .grey {
+    background-color: #eee;
+    font-size: 20px;
+}
+.pricing section{
+    height:600px;
+    width: auto;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+    .columns {
+        width: 100%;
+    }
+}
+
+.contactsection{
+    margin-top: 30px;
+}
+
+
+.myBtnpay{
+    size: 40px;
+    margin-left: 30px;
+   
+}
+
+/* The Modal (background) */
+.modal {
+    display:none;/* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+/* The Modal (background) */
+.admodal {
+    display:none;/* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.admodal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: max-content;
+    height: max-content; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+/* Customize the label (the container) */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 15px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  h2.headings {margin-bottom: 20px;}
+  .stat-card h3{font-size: 16px; margin-top: 5px; line-height: 20px; padding-right: 45px; color: #333; text-align: left;} 
+  .stat-card {position: relative; display: inline-block; background-color: #fff; width: 320px; min-height: 170px; text-align: left; padding: 15px; border-width: 1px;border-style: solid; border-color: rgb(204, 204, 204); border-image: initial; overflow: hidden;}
+  .stat-icon {position: absolute;top: 0px;right: 0px;width: 60px;height: 60px;line-height: 60px;text-align: center;}
+  .stat-icon.right {right: 0px;}
+  .stat-icon span {position: absolute;z-index: 8;top: -40px; left: 5px; width: 100px;height: 100px; line-height: 120px;border-radius: 50%;}
+  .stat-icon i {padding-left: 15px; color: rgb(255, 255, 255); z-index: 9; font-size: 24px;}
+  .bg-target {background-color: #E07000;}
+  .txt-target {color: #E07000;}
+  .bg-ontrack {background-color: #007613;}
+  .txt-ontrack {color: #007613;}
+  .bg-failing {background-color: #D43E3A;}
+  .txt-failing {color: #D43E3A;}
+  .bg-measure {background-color: #186EA5;}
+  .txt-measure {color: #186EA5;}
+  .stat-card h4.stat-num {font-size: 45px; text-align: left;}
+  .stat-card .subtext {font-size: 15px;}
+  .stat-card .source {font-size: 12px; margin-top: 15px;}
+  .stat-card .open-btn {margin-top: 15px;}
+
+.bankbalance,.investrepo,.commrepo,.finesrepo,.loansgivenrepo,.loanspaidrepo,.interestloansrepo,.merryrepo,.chamacontrepo{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.t-card {position: relative; display: inline-block; background-color: #fff; width: 520px; min-height: 170px; text-align: left; padding: 15px; border-width: 1px;border-style: solid; border-color: rgb(204, 204, 204); border-image: initial; overflow: hidden;}

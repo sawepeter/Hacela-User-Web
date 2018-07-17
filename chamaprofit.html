@@ -1,0 +1,235 @@
+<html>
+    <head>
+
+    <title>Web</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css"> 
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+    </head>    
+    <body>
+
+         <!--HOME SECTION-->
+<div class="home">
+        <div class="mdl-layout mdl-js-layout">
+          <header class="mdl-layout__header">
+            <div class="mdl-layout-icon"></div>
+            <div class="mdl-layout__header-row">
+              <span class="mdl-layout__title">Hecela</span>
+              <div class="mdl-layout-spacer"></div>
+              <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="#">username</a>
+                <a  id="logoutLink" class="mdl-navigation__link" href="#">logout</a>
+                <a class="mdl-navigation__link" href="#">contact</a>
+              </nav>
+            </div>
+          </header>
+
+          <div class="mdl-layout__drawer">
+              <img class="headimg" src="images/hacela.jpg"/>
+            <span class="mdl-layout__title">Hacela</span>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="home.html">Home</a>
+                <a class="mdl-navigation__link" href="adminpost.html">Admin Post</a>
+                <button class="dropdown-btn mdl-navigation__link">Projects 
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-container">
+                      <a class="mdl-navigation__link" href="investmentprojects.html">Investment Projects</a>
+                      <a class="mdl-navigation__link" href="communityprojects.html">Community Projects</a>
+                  </div>
+                  <button class="dropdown-btn mdl-navigation__link">My Account
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <a class="mdl-navigation__link" href="profile.html">Profile</a>
+                        <a class="mdl-navigation__link" href="loans.html">Loans</a>
+                        <a class="mdl-navigation__link" href="chamaprofit.html">Chama Profit</a>
+                        <a class="mdl-navigation__link" href="mydividends.html">My Dividends</a>
+                        <a class="mdl-navigation__link" href="merrygoround.html">Merry Go Round</a>
+                        <a class="mdl-navigation__link" href="savingsaccount.html">Savings Account</a>
+                    </div>
+                <a class="mdl-navigation__link" href="chamamembers.html">Members</a>
+            </nav>
+          </div>
+          <main class="mdl-layout__content">
+
+<!--Graph section-->
+            <div class="profitgraph" style="padding-top:50px">
+              <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+<!--GRAPH SCRIPT-->
+     <script>
+       window.onload = function () {
+        var chart = new CanvasJS.Chart("chartContainer", {
+          animationEnabled: true,
+          theme: "light2",
+          title:{
+            text: "PROFIT CURVE"
+          },
+          axisY:{
+            includeZero: false
+          },
+          data: [{        
+            type: "line",       
+            dataPoints: [
+              { y: 450 },
+              { y: 414},
+              { y: 520, indexLabel: "highest",markerColor: "red", markerType: "triangle" },
+              { y: 460 },
+              { y: 450 },
+              { y: 500 },
+              { y: 480 },
+              { y: 480 },
+              { y: 410 , indexLabel: "lowest",markerColor: "DarkSlateGrey", markerType: "cross" },
+              { y: 500 },
+              { y: 480 },
+              { y: 510 }
+            ]
+          }]
+        });
+        chart.render();
+      }
+        </script>
+                  <!--END OF GRAPH SCRIPT-->
+            </div>
+<!--end of graph section-->
+
+
+<!--CARD SECTION-->
+<div style="margin-top:100px" class="cardprofit">
+<h2 class="headings text-center">Overall Summary</h2>
+
+<ul class="cards-list">
+<li class="col-xs-12 col-sm-6 col-md-4">
+<div class="stat-card">
+<div class="stat-icon right"><span class="bg-ontrack"></span><i class="glyphicon glyphicon-home"></i></div>
+<h3>Income Profit</h3>
+<h4 class="stat-num"><span class="txt-ontrack">88.8</span></h4>
+<div class="subtext"><i class="glyphicon glyphicon-triangle-top txt-ontrack"></i> percent occupied of <strong>goal: 100%</strong></div>
+<div class="source">Source: <a href="#">Hacela Limited Authority</a></div>
+</div>
+</li>
+
+<li class="col-xs-12 col-sm-6 col-md-4">
+<div class="stat-card">
+<div class="stat-icon right"><span class="bg-measure"></span><i class="glyphicon glyphicon-home"></i></div>
+<h3>Expenses</h3>
+<h4 class="stat-num"><span class="txt-measure">1,011</span></h4>
+<div class="subtext"><i class="glyphicon glyphicon glyphicon-stats txt-measure"></i> residents assisted</div>
+<div class="source">Source: <a href="#">Hacela Limited Authority</a></div>
+</div>
+</li>
+
+<li class="col-xs-12 col-sm-6 col-md-4">
+<div class="stat-card">
+<div class="stat-icon right"><span class="bg-failing"></span><i class="glyphicon glyphicon-file"></i></div>
+<h3>Member Share Dividend<br /> </h3>
+<h4 class="stat-num"><span class="txt-failing">29</span></h4>
+<div class="subtext"><i class="glyphicon glyphicon-triangle-bottom txt-failing"></i> last month of <strong>goal: 40</strong></div>
+<div class="source">Source: <a href="#">Hacela Limited Authority</a></div>
+</div>
+</li>
+</ul>
+</div><br>
+<!--END OF CARD SECTION-->
+
+
+<!--PIE CHARTS-->
+
+<!--<div id="chartContainer" style="height: 300px; width: 100%; margin-top:350px"></div>
+<script>
+    window.onload = function () {
+   
+             var piechart = new CanvasJS.Chart("chartContainer", {
+         exportEnabled: true,
+         animationEnabled: true,
+         title:{
+           text: "Expense Breakdown Allocation"
+         },
+         legend:{
+           cursor: "pointer",
+           itemclick: explodePie
+         },
+         data: [{
+           type: "pie",
+           showInLegend: true,
+           toolTipContent: "{name}: <strong>{y}%</strong>",
+           indexLabel: "{name} - {y}%",
+           dataPoints: [
+             { y: 26, name: "Investment Project", exploded: true },
+             { y: 20, name: "Community Project" },
+             { y: 5, name: "Fines" },
+             { y: 3, name: "Loans Out" },
+             { y: 7, name: "Loans Paid" },
+             { y: 10, name: "Interest From Loans" },
+             { y: 22, name: "% from Merry-Go-Round"},
+             { y: 10, name: "Chama Contributions" }
+           ]
+         }]
+       });
+       piechart.render();
+       }
+       
+       function explodePie (e) {
+         if(typeof (e.dataSeries.dataPoints[e.dataPointIndex].exploded) === "undefined" || !e.dataSeries.dataPoints[e.dataPointIndex].exploded) {
+           e.dataSeries.dataPoints[e.dataPointIndex].exploded = true;
+         } else {
+           e.dataSeries.dataPoints[e.dataPointIndex].exploded = false;
+         }
+         e.piechart.render();
+        }
+   </script>-->
+
+<!--END OF Pie CHARTS-->
+
+
+</div>        
+</main>
+</div>
+</div>
+
+
+   
+
+
+
+            <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+            <script>
+              // Initialize Firebase
+              var config = {
+                apiKey: "AIzaSyCNzfMmlqmnyGtn1UZHWlAr5bJmbcEh9qg",
+                authDomain: "chama-web.firebaseapp.com",
+                databaseURL: "https://chama-web.firebaseio.com",
+                projectId: "chama-web",
+                storageBucket: "",
+                messagingSenderId: "897539161463"
+              };
+              firebase.initializeApp(config);
+            </script>
+            
+            <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+            <script src="web.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+            <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+            <script src= "https://cdn.zingchart.com/zingchart.min.js"></script>
+            <script> zingchart.MODULESDIR = "https://cdn.zingchart.com/modules/";
+            ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9","ee6b7db5b51705a13dc2339db3edaf6d"];</script>
+                </body>
+            </html>

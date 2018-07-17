@@ -1,0 +1,87 @@
+<html>
+        <head>
+    
+        <title>Web</title>
+    
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css"> 
+    
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+        
+        <link rel="stylesheet" href="style.css" />
+        </head>    
+        <body>
+    
+             <!--HOME SECTION-->
+    <div class="home">
+            <div class="mdl-layout mdl-js-layout">
+              <header class="mdl-layout__header">
+                <div class="mdl-layout-icon"></div>
+                <div class="mdl-layout__header-row">
+                  <span class="mdl-layout__title">Hecela</span>
+                  <div class="mdl-layout-spacer"></div>
+                  <nav class="mdl-navigation">
+                    <a class="mdl-navigation__link" href="#">username</a>
+                    <a  id="logoutLink" class="mdl-navigation__link" href="#">logout</a>
+                    <a class="mdl-navigation__link" href="#">contact</a>
+                  </nav>
+                </div>
+              </header>
+    
+              <div class="mdl-layout__drawer">
+                  <img class="headimg" src="images/hacela.jpg"/>
+                <span class="mdl-layout__title">Hacela</span>
+                <nav class="mdl-navigation">
+                    <a class="mdl-navigation__link" href="home.html">Home</a>
+                    <a class="mdl-navigation__link" href="adminpost.html">Admin Post</a>
+                    <button class="dropdown-btn mdl-navigation__link">Projects 
+                        <i class="fa fa-caret-down"></i>
+                      </button>
+                      <div class="dropdown-container">
+                          <a class="mdl-navigation__link" href="investmentprojects.html">Investment Projects</a>
+                          <a class="mdl-navigation__link" href="communityprojects.html">Community Projects</a>
+                      </div>
+                      <button class="dropdown-btn mdl-navigation__link">My Account
+                          <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-container">
+                            <a class="mdl-navigation__link" href="profile.html">Profile</a>
+                            <a class="mdl-navigation__link" href="loans.html">Loans</a>
+                            <a class="mdl-navigation__link" href="chamaprofit.html">Chama Profit</a>
+                            <a class="mdl-navigation__link" href="mydividends.html">My Dividends</a>
+                            <a class="mdl-navigation__link" href="merrygoround.html">Merry Go Round</a>
+                            <a class="mdl-navigation__link" href="savingsaccount.html">Savings Account</a>
+                        </div>
+                    <a class="mdl-navigation__link" href="chamamembers.html">Members</a>
+                </nav>
+              </div>
+              <main class="mdl-layout__content">
+
+
+                 
+    
+                <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+                <script>
+                  // Initialize Firebase
+                  var config = {
+                    apiKey: "AIzaSyCNzfMmlqmnyGtn1UZHWlAr5bJmbcEh9qg",
+                    authDomain: "chama-web.firebaseapp.com",
+                    databaseURL: "https://chama-web.firebaseio.com",
+                    projectId: "chama-web",
+                    storageBucket: "",
+                    messagingSenderId: "897539161463"
+                  };
+                  firebase.initializeApp(config);
+                </script>
+                
+                <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+                <script src="web.js"></script>
+         
+                    </body>
+                </html>

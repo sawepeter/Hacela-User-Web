@@ -1,0 +1,257 @@
+<html>
+        <head>
+    
+            <title>Web</title>
+            
+                <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+                <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+        
+        
+                <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+                
+                <link rel="stylesheet" href="style.css" />
+                </head>    
+                <body>
+
+            <!--HOME SECTION-->
+<div class="home">
+        <div class="mdl-layout mdl-js-layout">
+          <header class="mdl-layout__header">
+            <div class="mdl-layout-icon"></div>
+            <div class="mdl-layout__header-row">
+              <span class="mdl-layout__title">Hecela</span>
+              <div class="mdl-layout-spacer"></div>
+              <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="#">username</a>
+                <a  id="logoutLink" class="mdl-navigation__link" href="#">logout</a>
+                <a class="mdl-navigation__link" href="#">contact</a>
+              </nav>
+            </div>
+          </header>
+
+          <div class="mdl-layout__drawer">
+              <img class="headimg" src="images/hacela.jpg"/>
+            <span class="mdl-layout__title">Hacela</span>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="home.html">Home</a>
+                <a class="mdl-navigation__link" href="adminpost.html">Admin Post</a>
+                <button class="dropdown-btn mdl-navigation__link">Projects 
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-container">
+                      <a class="mdl-navigation__link" href="investmentprojects.html">Investment Projects</a>
+                      <a class="mdl-navigation__link" href="communityprojects.html">Community Projects</a>
+                  </div>
+                  <button class="dropdown-btn mdl-navigation__link">My Account
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <a class="mdl-navigation__link" href="profile.html">Profile</a>
+                        <a class="mdl-navigation__link" href="loans.html">Loans</a>
+                        <a class="mdl-navigation__link" href="chamaprofit.html">Chama Profit</a>
+                        <a class="mdl-navigation__link" href="mydividends.html">My Dividends</a>
+                        <a class="mdl-navigation__link" href="merrygoround.html">Merry Go Round</a>
+                        <a class="mdl-navigation__link" href="savingsaccount.html">Savings Account</a>
+                    </div>
+                <a class="mdl-navigation__link" href="chamamembers.html">Members</a>
+            </nav>
+          </div>
+          <main class="mdl-layout__content">
+
+<!--START OF BORROW LOAN-->
+
+<div class ="row">
+    <style>
+          .demo-card-square.mdl-card {
+            width: 320px;
+            height: 320px;
+          }
+          .demo-card-square > .mdl-card__title {
+            color: #fff;
+            background:
+              url('../assets/demos/dog.png') bottom right 15% no-repeat #46B6AC;
+          }
+          </style>
+          
+          <div class="bbloan">
+          <div class="demo-card-square mdl-card mdl-shadow--2dp">
+            <div class="mdl-card__title mdl-card--expand">
+              <h2 class="mdl-card__title-text">BORROW LOAN</h2>
+            </div>
+            <div class="mdl-card__supporting-text">
+              Borrow loans from the chama investments allocation.
+              Loan to be paid on time
+            </div>
+            <div id="borrowloanBtn" class="mdl-card__actions mdl-card--border">
+              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                BORROW LOAN
+              </a>
+            </div>
+          </div>
+      </div>
+
+    <!--END OF BORROW LOAN-->
+
+    <!--Borrow laon dialog-->
+    <dialog class="mdl-dialog">
+      <h5 class="mdl-dialog__title">Borrow loan</h5>
+      <div class="mdl-dialog__content">
+        <p>
+         Max Amt: Ksh 50,000
+        </p>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+          <input class="mdl-textfield__input" type="text" id="amountloanbr">
+          <label class="mdl-textfield__label" for="posttitle">Amount</label>
+        </div>
+      </div>
+      <div class="mdl-dialog__actions">
+        <button id="borrowlbtn" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Borrow</button>
+      </div>
+    </dialog>
+    <script>
+      var dialog = document.querySelector('dialog');
+      var showDialogButton = document.querySelector('#show-dialog');
+      if (! dialog.showModal) {
+        dialogPolyfill.registerDialog(dialog);
+      }
+      showDialogButton.addEventListener('click', function() {
+        dialog.showModal();
+      });
+      dialog.querySelector('.close').addEventListener('click', function() {
+        dialog.close();
+      });
+    </script>
+
+    <!--End of borrow loan dialog-->
+
+
+
+    <!--PAY LAON SECTION-->
+<style>
+.demo-card-square.mdl-card {
+width: 320px;
+height: 320px;
+}
+.demo-card-square > .mdl-card__title {
+color: #fff;
+background:
+url('../assets/demos/dog.png') bottom right 15% no-repeat #46B6AC;
+}
+</style>
+
+<div class="pploan">
+<div class="demo-card-square mdl-card mdl-shadow--2dp">
+<div class="mdl-card__title mdl-card--expand">
+<h2 class="mdl-card__title-text">PAY DEBTS</h2>
+</div>
+<div class="mdl-card__supporting-text">
+Pay the amount of loan aloocated to you.
+Interest are considered.
+</div>
+<div id="payloanBtn" class="mdl-card__actions mdl-card--border">
+<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+PAY LOAN
+</a>
+</div>
+</div>
+</div>
+    <!--END OF PAY LOAN-->
+
+    <!--Pay loan dialog-->
+
+    <dialog class="mdl-dialog">
+      <div class="mdl-dialog__content">
+        <p>
+          Choose method of payment
+        </p>
+      </div>
+
+      <img class="img-circle" src="images/hde.jpg">
+
+      <div class="mdl-dialog__actions mdl-dialog__actions--full-width">
+        <button type="button" class="mdl-button">Agree</button>
+        <button type="button" class="mdl-button close">Disagree</button>
+      </div>
+    </dialog>
+    <script>
+      var dialog = document.querySelector('dialogp');
+      var showModalButton = document.querySelector('.show-modal');
+      if (! dialog.showModal) {
+        dialogPolyfill.registerDialog(dialog);
+      }
+      showModalButton.addEventListener('click', function() {
+        dialog.showModal();
+      });
+      dialog.querySelector('.close').addEventListener('click', function() {
+        dialog.close();
+      });
+    
+    </script>
+
+    <!--End of pay loan dialog-->
+
+
+    <!--MEMBERS WITH LOAN SECTION-->
+    <style>
+          .demo-card-square.mdl-card {
+            width: 320px;
+            height: 320px;
+          }
+          .demo-card-square > .mdl-card__title {
+            color: #fff;
+            background:
+              url('../assets/demos/dog.png') bottom right 15% no-repeat #46B6AC;
+          }
+          </style>
+
+          <div class="ccloan">
+          <div class="demo-card-square mdl-card mdl-shadow--2dp">
+            <div class="mdl-card__title mdl-card--expand">
+              <h2 class="mdl-card__title-text">MEMBERS WITH LOAN</h2>
+            </div>
+            <div class="mdl-card__supporting-text">
+              Check all members with accumulated loans.
+              Receipt can be printed
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                CHECK MEMBERS
+              </a>
+            </div>
+          </div>
+      </div>
+  </div>
+    <!--END OF MEMBERS WITH LOAN-->
+
+
+
+          </main>
+        </div>
+      </div>
+
+          
+          
+  
+        <!--END OF HOME SECTION-->
+
+        <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+        <script>
+          // Initialize Firebase
+          var config = {
+            apiKey: "AIzaSyCNzfMmlqmnyGtn1UZHWlAr5bJmbcEh9qg",
+            authDomain: "chama-web.firebaseapp.com",
+            databaseURL: "https://chama-web.firebaseio.com",
+            projectId: "chama-web",
+            storageBucket: "",
+            messagingSenderId: "897539161463"
+          };
+          firebase.initializeApp(config);
+        </script>
+        
+        <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+        <script src="web.js"></script>
+        
+            </body>
+        </html>
